@@ -3,7 +3,7 @@
 baseURL: "https://reinosk.github.io/"
 title: 怜之助 | @reinosk
 paginate: 5
-theme: [hugo-PaperMod]
+theme: [PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
