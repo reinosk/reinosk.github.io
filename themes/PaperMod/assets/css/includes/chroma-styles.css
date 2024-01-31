@@ -46,8 +46,15 @@
 
 /* LineHighlight */
 .chroma .hl {
-    background-color: #5555557a
+    background-color: #47474770;
+    /* Gunakan warna biru ketika tema terang */
 }
+
+.dark .chroma .hl {
+    background-color: #5050502d;
+    /* Gunakan warna putih ketika tema gelap */
+}
+
 
 /* LineNumbersTable */
 .chroma .lnt {
