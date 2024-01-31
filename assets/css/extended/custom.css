@@ -16,6 +16,10 @@ iframe {
     border: 1px solid var(--border);
 }
 
+.home-info a {
+    text-decoration: underline;
+}
+
 mark {
     background-color: white;
     color: black;

@@ -29,7 +29,7 @@ languages:
       series: series
     menu:
       main:
-        - name: Archive
+        - name: Archives
           url: archives
           weight: 5
         - name: Search
@@ -144,9 +144,10 @@ params:
   homeInfoParams:
     Title: "ようこそ! (yōkoso!)"
     Content: >
-      I'm a computer science student passionate about coding in TypeScript and building full-stack apps. Stack on VueJS, NestJS, TypeORM, MySQL
-
-      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media.
+      I'm a computer science student passionate about coding in TypeScript and building full-stack apps. Stack on VueJS, NestJS, TypeORM, MySQL. Currently focusing on linux kernel programming and technical hacking.
+      <br>
+      <br>
+      [RSS Feed](https://reinosk.github.io/index.xml) - Subscribe to this blog using RSS aggregators.
 
   socialIcons:
     - name: github
