@@ -1,5 +1,5 @@
 ---
-author: "@rienosk"
+author: "@reinosk"
 title: Linux Structure
 date: 2024-01-31T10:03:28.407Z
 # description: ads
