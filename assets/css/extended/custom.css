@@ -21,6 +21,10 @@ mark {
     color: black;
 }
 
+code {
+    border: 1px solid var(--border);
+}
+
 /* Background */
 .bg {
     color: #ffffff;
