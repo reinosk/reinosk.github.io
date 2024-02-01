@@ -9,7 +9,7 @@ ShowToc: true
 # TocOpen: true
 ---
 
-### 1. History
+### History
 
 Many events led up to creating the first Linux kernel and, ultimately, the Linux operating system (OS), starting with the Unix operating system's release by Ken Thompson and Dennis Ritchie (whom both worked for AT&T at the time) in 1970. The Berkeley Software Distribution (BSD) was released in 1977, but since it contained the Unix code owned by AT&T, a resulting lawsuit limited the development of BSD. Richard Stallman started the GNU project in 1983. His goal was to create a free Unix-like operating system, and part of his work resulted in the GNU General Public License (GPL) being created. Projects by others over the years failed to result in a working, free kernel that would become widely adopted until the creation of the Linux kernel.
 
@@ -23,7 +23,7 @@ Since Linux is free and open-source, the source code can be modified and distrib
 
 Linux is an operating system like Windows, iOS, Android, or macOS. An OS is software that manages all of the hardware resources associated with our computer. That means that an OS manages the whole communication between software and hardware. Also, there exist many different distributions (distro). It is like a version of Windows operating systems.
 
-### 2. Philosophy
+### Philosophy
 
 Linux follows five core principles:
 
@@ -35,7 +35,7 @@ Linux follows five core principles:
 |Avoid captive user interfaces|Linux is designed to work mainly with the shell (or terminal), which gives the user greater control over the operating system.|
 |Configuration data stored in a text file|An example of such a file is the `/etc/passwd` file, which stores all users registered on the system.|
 
-### 3. Linux Architecture
+### Linux Architecture
 
 The Linux operating system can be broken down into layers:
 
