@@ -1,7 +1,7 @@
 ---
 author: "@reinosk"
 title: Introduction to Shell
-date: 2024-01-31T12:13:02.407Z
+date: 2024-02-01T06:13:02.407Z
 description: It is crucial to learn how to use the Linux shell, as there are many servers based on Linux. These are often used because Linux is less error-prone as opposed to Windows servers.
 summary: It is crucial to learn how to use the Linux shell, as there are many servers based on Linux. These are often used because Linux is less error-prone as opposed to Windows servers.
 series: ["HTB"]
