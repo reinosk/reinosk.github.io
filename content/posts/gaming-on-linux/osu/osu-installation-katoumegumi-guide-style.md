@@ -152,7 +152,7 @@ If issues arise after this (such as an unhandled exception or privileged instruc
 
 ### 2.2 Dependency Requirements
 
-```bash
+```bash {linenos=table}
 ...
 if command -v pacman >/dev/null 2>&1 ; then
     
