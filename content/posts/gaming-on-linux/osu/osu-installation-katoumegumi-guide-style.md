@@ -17,11 +17,11 @@ The following install guide has different installation methods for osu!, one wit
 
 You should pick your preferred installation method and then decide whether you want to do additional steps to improve your experience with the game also outlined here. 
 
-# 1. Installing osu!
+## Installing osu!
 
 Enable [multilib](https://wiki.archlinux.org/title/Multilib) and install [wine](https://archlinux.org/packages/?name=wine) and [winetricks](https://archlinux.org/packages/?name=winetricks)
 
-### 1.1 Prepare wineprefix
+### Prepare wineprefix
 
 Create WINEPREFIX for your osu! installation and run winetricks to install required dependencies for osu! to work correctly. 
 
@@ -35,7 +35,7 @@ cjkfonts allows you to see CJK characters correctly, instead of squares. gdiplus
 
 ![prepare_wineprefix](https://imgur.com/3bHKY0V.png#center)
 
-### 1.2 Installing The Game
+### Installing The Game
 
 > *You can skip next 3 steps if you want to symlink your existing osu! installation. Refer to [ln(1)](https://man.archlinux.org/man/ln.1) for instructions.*
 
@@ -81,7 +81,7 @@ Update all deps:
 sudo pacman -Syy && sudo pacman -Syu
 ```
 
-### 1.3 Creating freedesktop entry
+### Creating freedesktop entry
 
 Fetch osu! logo. 
 
@@ -109,9 +109,9 @@ Let's start the GAMEEEEEDKAJDLASJFLASDJFJ!!!
 ![osu_running_successfully](https://imgur.com/uJ2GTeX.png)
 
 
-# 2. Troubleshooting
+## Troubleshooting
 
-### 2.1 Networking
+### Networking
 
 WTF is this sh*t???!!
 
@@ -150,9 +150,9 @@ If issues arise after this (such as an unhandled exception or privileged instruc
 # setcap -r /usr/bin/wine-preloader
 ```
 
-### 2.2 Dependency Requirements
+### Dependency Requirements
 
-```bash {linenos=table,[21,30]}
+```bash {linenos=table,hl_lines[21,30]}
 ...
 if command -v pacman >/dev/null 2>&1 ; then
     
@@ -189,7 +189,7 @@ if command -v pacman >/dev/null 2>&1 ; then
 fi
 ...
 ```
-# 3. References
+## References
 
 - [Installing osu! on Linux with low-latency [2023]](https://osu.ppy.sh/community/forums/topics/1248084?n=1)
 - [KatouMegumi's guide](https://wiki.archlinux.org/title/User:Katoumegumi#osu!_(stable)_on_Arch_Linux)
