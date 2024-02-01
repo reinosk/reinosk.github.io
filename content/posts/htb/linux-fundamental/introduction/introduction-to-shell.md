@@ -11,10 +11,8 @@ ShowToc: true
 
 For example, web servers are often based on Linux. Knowing how to use the operating system to control it effectively requires understanding and mastering Linux’s essential part, the **Shell**. When we first switched from Windows to Linux, does it look something like this:
 
-![terminal](https://i.imgur.com/ob0RztU.png#center)
-
 ```shell
-~username@archlinux>
+<username>@<hostname>[~]$
 ```
 
 A Linux terminal, also called a shell or command line, provides a text-based input/output (I/O) interface between users and the kernel for a computer system. The term console is also typical but does not refer to a window but a screen in text mode. In the terminal window, commands can be executed to control the system.
