@@ -195,7 +195,7 @@
     font-size: 0.78em;
     line-height: 1.5;
     background: var(--code-bg);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .post-content pre code {

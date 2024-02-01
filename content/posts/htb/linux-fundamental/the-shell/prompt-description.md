@@ -5,7 +5,7 @@ date: 2024-02-01T04:00:24.042Z
 description: The bash prompt is easy to understand and, by default, includes information such as the user, hostname, and current working directory.
 summary: The bash prompt is easy to understand and, by default, includes information such as the user, hostname, and current working directory.
 series: ["HTB"]
-ShowToc: true
+ShowToc: false
 # TocOpen: true
 ---
 

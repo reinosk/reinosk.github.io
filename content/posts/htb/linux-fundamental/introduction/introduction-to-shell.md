@@ -5,7 +5,7 @@ date: 2024-02-01T01:24:34.807Z
 description: It is crucial to learn how to use the Linux shell, as there are many servers based on Linux. These are often used because Linux is less error-prone as opposed to Windows servers.
 summary: It is crucial to learn how to use the Linux shell, as there are many servers based on Linux. These are often used because Linux is less error-prone as opposed to Windows servers.
 series: ["HTB"]
-ShowToc: true
+ShowToc: false
 # TocOpen: true
 ---
 
