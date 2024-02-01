@@ -37,7 +37,7 @@ $
 
 ### Privileged - Root Shell Prompt
 
-```shell
+```cmd
 #
 ```
 
