@@ -21,6 +21,12 @@ You should pick your preferred installation method and then decide whether you w
 
 Enable [multilib](https://wiki.archlinux.org/title/Multilib) and install [wine](https://archlinux.org/packages/?name=wine) and [winetricks](https://archlinux.org/packages/?name=winetricks)
 
+### Update Deps
+
+```shell
+sudo pacman -Syy && sudo pacman -Syu
+```
+
 ### Prepare wineprefix
 
 Create WINEPREFIX for your osu! installation and run winetricks to install required dependencies for osu! to work correctly. 
@@ -74,11 +80,6 @@ export __GL_SYNC_TO_VBLANK=0 #For NVIDIA proprietary and open source >=500
 
 #start osu!
 wine osu\!.exe
-```
-Update all deps:
-
-```shell
-sudo pacman -Syy && sudo pacman -Syu
 ```
 
 ### Creating freedesktop entry
@@ -189,6 +190,15 @@ if command -v pacman >/dev/null 2>&1 ; then
 fi
 ...
 ```
+
+### Beatmaps
+
+If your Beatmap couldn't be loaded successfully. Just following this:
+
+```
+$ yay -S osu-handler
+```
+
 ## References
 
 - [Installing osu! on Linux with low-latency [2023]](https://osu.ppy.sh/community/forums/topics/1248084?n=1)
