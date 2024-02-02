@@ -24,7 +24,7 @@ Enable [multilib](https://wiki.archlinux.org/title/Multilib) and install [wine](
 ### Update Deps
 
 ```shell
-sudo pacman -Syy && sudo pacman -Syu
+$ sudo pacman -Syy && sudo pacman -Syu
 ```
 
 ### Prepare wineprefix
