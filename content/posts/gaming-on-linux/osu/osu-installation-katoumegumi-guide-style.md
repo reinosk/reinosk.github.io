@@ -7,7 +7,6 @@ summary: This is my personal configuration for my osu! stuff on Arch Linux. No p
 series: ["Gaming on Linux"]
 cover: 
    image: https://imgur.com/uJ2GTeX.png
-   caption: "osu! background"
 ShowToc: true
 # TocOpen: true
 ---
@@ -110,7 +109,7 @@ StartupNotify=true
 ```
 
 Let's start the GAMEEEEEDKAJDLASJFLASDJFJ!!!
-![osu_running_successfully](https://imgur.com/uJ2GTeX.png)
+![osu_running_successfully](https://cdn.discordapp.com/attachments/1196659654491635763/1202841498836541450/image.png?ex=65ceec71&is=65bc7771&hm=855a4fe79d8c7c6ad6b463e2b95b040ba5b48634eb228135d051c3bdf54f7d50&)
 
 
 ## Troubleshooting
