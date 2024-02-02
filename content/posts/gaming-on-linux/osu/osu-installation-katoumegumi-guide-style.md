@@ -5,6 +5,9 @@ date: 2024-02-01T08:22:10.083Z
 description: This is my personal configuration for my osu! stuff on Arch Linux. No plans will be made to make a separate osu! wiki page.
 summary: This is my personal configuration for my osu! stuff on Arch Linux. No plans will be made to make a separate osu! wiki page.
 series: ["Gaming on Linux"]
+cover: 
+   image: https://imgur.com/uJ2GTeX.png
+   caption: "osu! background"
 ShowToc: true
 # TocOpen: true
 ---
