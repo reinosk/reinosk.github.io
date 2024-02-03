@@ -15,7 +15,7 @@ ShowToc: true
 
 > See also:
 >
-> **[Part II - TypeScript for Smashing People](https://reinosk.github.io/posts/programming/ts/part-ii-ts-for-smashing-people/) ⚠️🚧**
+> **[Taliking about TypeScript | Part II - TypeScript for Smashing People](https://reinosk.github.io/posts/programming/ts/part-ii-ts-for-smashing-people/) ⚠️🚧**
 
 ## Introduction
 
