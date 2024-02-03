@@ -51,7 +51,7 @@
 }
 
 .dark .chroma .hl {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #47474770;
     /* Gunakan warna putih ketika tema gelap */
 }
 

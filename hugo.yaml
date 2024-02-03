@@ -41,6 +41,9 @@ languages:
         - name: Posts
           url: posts/
           weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
 
   # fr:
   #   languageName: ":fr:"
