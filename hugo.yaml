@@ -44,6 +44,31 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
+  id:
+    languageName: ":id:"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archives
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Series
+          url: series/
+          weight: 10
+        - name: Posts
+          url: posts/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
 
   # fr:
   #   languageName: ":fr:"
