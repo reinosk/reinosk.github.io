@@ -19,7 +19,7 @@ ShowToc: true
 
 ## Introduction
 
-There ara so many ways to learn a programming language, and even more ways to go from ***"I can read this"*** to ***"I truly understand what's going on here"***.
+There are so many ways to learn a programming language, and even more ways to go from ***"I can read this"*** to ***"I truly understand what's going on here"***.
 
 Do you have some time to talk about TypeScript? if you've been following discussion in the tech community during the last couple of years, there has been no way of avoiding countless.
 
