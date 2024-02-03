@@ -1,6 +1,6 @@
 ---
 author: "@reinosk"
-title: Part I - Introduction
+title: Talking about TypeScript | Part I - Introduction
 date: 2024-02-03T05:57:36.920Z
 description: a collection of TypeScript recipes that showcase the awesome power of TypeScript!
 summary: a collection of TypeScript recipes that showcase the awesome power of TypeScript!
