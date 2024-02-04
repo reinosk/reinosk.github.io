@@ -30,7 +30,7 @@ languages:
     menu:
       main:
         - name: Archives
-          url: archives
+          url: archives/
           weight: 5
         - name: Search
           url: search/
@@ -53,16 +53,16 @@ languages:
       series: series
     menu:
       main:
-        - name: Archives
-          url: archives
+        - name: Arsipan
+          url: arsipan/
           weight: 5
-        - name: Search
-          url: search/
+        - name: Cari
+          url: cari/
           weight: 10
-        - name: Series
+        - name: Serial
           url: series/
           weight: 10
-        - name: Posts
+        - name: Postingan
           url: posts/
           weight: 10
         - name: Tags
