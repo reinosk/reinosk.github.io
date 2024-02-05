@@ -5,6 +5,7 @@ date: 2024-01-31T10:03:28.407Z
 description: Linux is an indispensable tool and system in the field of cybersecurity. Many servers run on Linux and offer a wide range of possibilities for offensive security practitioners, network defenders, and systems administrators.
 summary: Linux is an indispensable tool and system in the field of cybersecurity. Many servers run on Linux and offer a wide range of possibilities for offensive security practitioners, network defenders, and systems administrators.
 series: ["HTB"]
+tags: ["Linux Fundamental"]
 ShowToc: true
 # TocOpen: true
 ---
