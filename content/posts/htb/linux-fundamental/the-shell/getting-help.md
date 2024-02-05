@@ -5,6 +5,7 @@ date: 2024-02-01T04:30:40.000Z
 description: Familiarizing with unfamiliar tools and their optional parameters is vital. Use man pages and help functions to understand new tools. Learn about a tool before use to discover unexpected features. Man pages offer detailed manuals for better understanding.
 summary: Familiarizing with unfamiliar tools and their optional parameters is vital. Use man pages and help functions to understand new tools. Learn about a tool before use to discover unexpected features. Man pages offer detailed manuals for better understanding.
 series: ["HTB"]
+tags: ["Linux Fundamental"]
 ShowToc: false
 # TocOpen: true
 ---
