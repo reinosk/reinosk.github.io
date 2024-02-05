@@ -5,6 +5,7 @@ date: 2024-01-31T12:13:02.407Z
 description: Linux distributions - or distros - are operating systems based on the Linux kernel. 
 summary: Linux distributions - or distros - are operating systems based on the Linux kernel. 
 series: ["HTB"]
+tags: ["Linux Fundamental"]
 ShowToc: false
 # TocOpen: true
 ---
