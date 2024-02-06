@@ -34,7 +34,7 @@ $ sudo pacman -Syy && sudo pacman -Syu
 Create WINEPREFIX for your osu! installation and run winetricks to install required dependencies for osu! to work correctly. 
 
 ```shell
-$ WINEARCH=win32 WINEPREFIX=~/.wineosu winetricks dotnet40 cjkfonts gdiplus
+$ WINEARCH=win32 WINEPREFIX=~/.wineosu winetricks dotnet40 gdiplus corefonts baekmuk meiryo tahoma vlgothic cjkfonts fontfix
 ```
 
 cjkfonts allows you to see CJK characters correctly, instead of squares. gdiplus fixes icon display in osu! settings. 
