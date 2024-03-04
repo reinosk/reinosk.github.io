@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 怜之助 | @reinosk</title>
+    <link>http://localhost:1313/id/tags/</link>
+    <description>Recent content in Tags on 怜之助 | @reinosk</description>
+    <image>
+      <title>怜之助 | @reinosk</title>
+      <url>http://localhost:1313/images/raccoon.png</url>
+      <link>http://localhost:1313/images/raccoon.png</link>
+    </image>
+    <generator>reinosk - reinosk.github.io</generator>
+    <language>id</language>
+    <atom:link href="http://localhost:1313/id/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
