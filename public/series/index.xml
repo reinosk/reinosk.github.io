@@ -11,15 +11,8 @@
     </image>
     <generator>reinosk - reinosk.github.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Feb 2024 04:15:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Feb 2024 05:57:36 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HTB</title>
-      <link>http://localhost:1313/series/htb/</link>
-      <pubDate>Wed, 14 Feb 2024 04:15:18 +0000</pubDate>
-      <guid>http://localhost:1313/series/htb/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Programming</title>
       <link>http://localhost:1313/series/programming/</link>
@@ -32,6 +25,13 @@
       <link>http://localhost:1313/series/gaming-on-linux/</link>
       <pubDate>Thu, 01 Feb 2024 08:22:10 +0000</pubDate>
       <guid>http://localhost:1313/series/gaming-on-linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>http://localhost:1313/series/hacking/</link>
+      <pubDate>Thu, 01 Feb 2024 01:24:34 +0000</pubDate>
+      <guid>http://localhost:1313/series/hacking/</guid>
       <description></description>
     </item>
   </channel>

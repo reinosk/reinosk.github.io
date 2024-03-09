@@ -11,22 +11,8 @@
     </image>
     <generator>reinosk - reinosk.github.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Feb 2024 04:15:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Feb 2024 05:57:36 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Navigation</title>
-      <link>http://localhost:1313/posts/htb/linux-fundamental/workflow/navigation/</link>
-      <pubDate>Wed, 14 Feb 2024 04:15:18 +0000</pubDate>
-      <guid>http://localhost:1313/posts/htb/linux-fundamental/workflow/navigation/</guid>
-      <description>Navigation is essential, like working with the mouse as a standard Windows user.</description>
-    </item>
-    <item>
-      <title>System Information</title>
-      <link>http://localhost:1313/posts/htb/linux-fundamental/the-shell/system-information/</link>
-      <pubDate>Wed, 14 Feb 2024 04:15:18 +0000</pubDate>
-      <guid>http://localhost:1313/posts/htb/linux-fundamental/the-shell/system-information/</guid>
-      <description>Since we will be working with many different Linux systems, we need to learn the structure and the information about the system, its processes, network configurations, users, directories, user settings, and the corresponding parameters.</description>
-    </item>
     <item>
       <title>Talking about TypeScript | Chapter 1 - Introduction</title>
       <link>http://localhost:1313/posts/programming/ts/chapter-1-ts-introduction/</link>
@@ -42,39 +28,11 @@
       <description>This is my personal configuration for my osu! stuff on Arch Linux. No plans will be made to make a separate osu! wiki page.</description>
     </item>
     <item>
-      <title>Getting Help</title>
-      <link>http://localhost:1313/posts/htb/linux-fundamental/the-shell/getting-help/</link>
-      <pubDate>Thu, 01 Feb 2024 04:30:40 +0000</pubDate>
-      <guid>http://localhost:1313/posts/htb/linux-fundamental/the-shell/getting-help/</guid>
-      <description>Familiarizing with unfamiliar tools and their optional parameters is vital. Use man pages and help functions to understand new tools. Learn about a tool before use to discover unexpected features. Man pages offer detailed manuals for better understanding.</description>
-    </item>
-    <item>
-      <title>Prompt Description</title>
-      <link>http://localhost:1313/posts/htb/linux-fundamental/the-shell/prompt-description/</link>
-      <pubDate>Thu, 01 Feb 2024 04:00:24 +0000</pubDate>
-      <guid>http://localhost:1313/posts/htb/linux-fundamental/the-shell/prompt-description/</guid>
-      <description>The bash prompt is easy to understand and, by default, includes information such as the user, hostname, and current working directory.</description>
-    </item>
-    <item>
-      <title>Introduction to Shell</title>
-      <link>http://localhost:1313/posts/htb/linux-fundamental/introduction/introduction-to-shell/</link>
+      <title>HTB - Appointment Writeups</title>
+      <link>http://localhost:1313/posts/hacking-writeups/appointment/</link>
       <pubDate>Thu, 01 Feb 2024 01:24:34 +0000</pubDate>
-      <guid>http://localhost:1313/posts/htb/linux-fundamental/introduction/introduction-to-shell/</guid>
-      <description>It is crucial to learn how to use the Linux shell, as there are many servers based on Linux. These are often used because Linux is less error-prone as opposed to Windows servers.</description>
-    </item>
-    <item>
-      <title>Linux Distributions</title>
-      <link>http://localhost:1313/posts/htb/linux-fundamental/introduction/linux-distributions/</link>
-      <pubDate>Wed, 31 Jan 2024 12:13:02 +0000</pubDate>
-      <guid>http://localhost:1313/posts/htb/linux-fundamental/introduction/linux-distributions/</guid>
-      <description>Linux distributions - or distros - are operating systems based on the Linux kernel.</description>
-    </item>
-    <item>
-      <title>Linux Structure</title>
-      <link>http://localhost:1313/posts/htb/linux-fundamental/introduction/linux-structure/</link>
-      <pubDate>Wed, 31 Jan 2024 10:03:28 +0000</pubDate>
-      <guid>http://localhost:1313/posts/htb/linux-fundamental/introduction/linux-structure/</guid>
-      <description>Linux is an indispensable tool and system in the field of cybersecurity. Many servers run on Linux and offer a wide range of possibilities for offensive security practitioners, network defenders, and systems administrators.</description>
+      <guid>http://localhost:1313/posts/hacking-writeups/appointment/</guid>
+      <description>Appointment is a box that is mostly web-application oriented. More specifically, we will find out how to perform an SQL Injection against an SQL Database enabled web application.</description>
     </item>
   </channel>
 </rss>
