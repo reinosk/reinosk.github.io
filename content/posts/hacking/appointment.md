@@ -36,7 +36,7 @@ First, we perform an nmap scan to find the open and available ports and their se
 
 Additionally, we will need super-user privileges to run the command below with the `-sC` or `-sV` flags. This is because script scanning ( `-sC` ) and version detection ( `-sV` ) are considered more intrusive methods ofscanning the target. This results in a higher probability of being caught by a perimeter security device on thetarget's network.
 
-> `-sC`: _Performs a script scan using the default set of scripts. It is equivalent to ---script=default. Some of the scripts in this category are considered intrusive and should not be run against a target network without permission._
+> `-sC`: _Performs a script scan using the default set of scripts. It is equivalent to `--script=default`. Some of the scripts in this category are considered intrusive and should not be run against a target network without permission._
 > 
 > `-sV`: _Enables version detection, which will detect what versions are running on what port._
 
