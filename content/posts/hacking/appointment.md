@@ -52,7 +52,7 @@ Apache HTTP Server is a free and open-source application that runs web pages on 
 The nmap scan provided us with the exact version of the Apache httpd service, which is 2.4.38. Usually, a good idea would be to search up the service version on popular vulnerability databases online to see if any vulnerability exists for the specified version. However, in our case, this version does not contain any known vulnerability that we could potentially exploit.
 
 In order to further enumerate the service running on port 80, we can navigate directly to the IP address of
-the target from our browse.
+the target from our browser.
 
 ![...](https://i.imgur.com/dMFd9x9.png#center)
 
