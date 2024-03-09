@@ -52,11 +52,9 @@ Apache HTTP Server is a free and open-source application that runs web pages on 
 The nmap scan provided us with the exact version of the Apache httpd service, which is 2.4.38. Usually, a good idea would be to search up the service version on popular vulnerability databases online to see if any vulnerability exists for the specified version. However, in our case, this version does not contain any known vulnerability that we could potentially exploit.
 
 In order to further enumerate the service running on port 80, we can navigate directly to the IP address of
-the target from our browser, inside our Pwnbox instance or Virtual Machine.
+the target from our browse.
 
 ![...](https://i.imgur.com/dMFd9x9.png#center)
-
-> _Starting from below, we will be exploring the concept of brute-forcing different directories to include in our Enumeration phase, which will not help us exploit the target and is considered an optional but good-to-know step. This section is considered optional for Tier 0, but represents a valuable step in the assessment process. If you would like to skip it, you can scroll down to the `Foothold` section._
 
 By typing the IP address of the target into the URL field of our browser, we are faced with a website containing a log-in form. Log-in forms are used to authenticate users and give them access to restricted parts of the website depending on the privilege level associated with the input username. Since we are not aware of any specific credentials that we could use to log-in, we will check if there are any other directories or pages useful for us in the enumeration process. It is always considered good practice to fully enumerate the target before we target a specific vulnerability we are aware of, such as the SQL Injection vulnerability in this case. We need the whole picture to ensure we are not missing anything and fall into a rabbit hole, which could quickly become frustrating.
 
