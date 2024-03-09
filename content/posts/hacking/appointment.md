@@ -1,6 +1,6 @@
 ---
 author: "@reinosk"
-title: Appointment Writeups
+title: Appointment Write-up
 date: 2024-02-01T01:24:34.807Z
 description: Appointment is a box that is mostly web-application oriented. More specifically, we will find out how to perform an SQL Injection against an SQL Database enabled web application.
 summary: Appointment is a box that is mostly web-application oriented. More specifically, we will find out how to perform an SQL Injection against an SQL Database enabled web application.
@@ -76,4 +76,75 @@ Forgot Password page:
 ```cmd
 https://www.example.com/login/forgot
 ```
+
+However, suppose buttons and links to the desired directories are not provided. In that case, because the directories we are looking for either contain sensitive material or simply resources for the website to load images and videos, we can provide the names of those directories or web pages in the same browser URL field to see if it will load anything. Your browser by itself will not block access to these directories simply because there is no link or button on the webpage for them. Website administrators will need to make sure directories containing sensitive information are properly secured so that users can not just simply manually navigate to them.
+
+When navigating through web directories, the HTTP client, which is your browser, communicates with the HTTP server (in this case Apache 2.4.38) using the HTTP protocol by sending an HTTP Request (a GET or POST message) which the server will then process and return with an HTTP Response.
+
+HTTP Responses contain [status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), which detail the interaction status between the client's request and how the server handled it.
+
+Let us take a look at the complete process for searching up and accessing a hidden directory. By specifying the IP address of the target that runs an HTTP server in the browser URL field followed by a forward-slash ( `/` ) and the name of the directory or file we are looking for, the following events will take place:
+- The user-agent (the browser / the HTTP client) will send a GET request to the HTTP Server with the URL of the resource we requested.
+- The HTTP server will look up the resource in the specified location (the given URL).
+- If the resource or directory exists, we will receive the HTTP Server response containing the data we requested (be it a webpage, an image, an audio file, a script, etc.) and response code `200 OK`, because the resource was found and the request was fulfilled with success.
+- If the resource or directory cannot be found at the specified address, and there is no redirection implemented for it by the server administrator, the HTTP Server response will contain the typical `404 Page` with the response code `404 Not Found` attached.
+
+These two cases above are what we will be focusing on when attempting to enumerate hidden directories or resources. However, instead of manually navigating through the URL search bar to find this hidden data, we will be using a tool that will automate the search for us. This is where tools such as Gobuster, Dirbuster, Dirb, and others come into play.
+
+### Checking out the web directories
+
+Gobuster is a web directory brute-forcing tool used to search for hidden directories and files by sending HTTP requests to the target server with potential directory or file names, identifying unauthorized entry points in web applications. On the other hand, Seclists serves as a comprehensive collection of common passwords, keywords, and patterns utilized in security attacks, aiding in password cracking attempts, password strength testing, or other network attacks by providing a wide array of password possibilities. Together, these tools complement each other in penetration testing, facilitating the discovery of security vulnerabilities, sensitive information, or unauthorized access to systems and data.
+
+```cmd
+$ gobuster dir --url http://10.129.254.3/ --wordlist Discovery/Web-Content/directory-list-lowercase-2.3-small.txt
+```
+
+![...](https://i.ibb.co/d4sQCR1/image.png#center)
+
+After checking out the web directories, we have found no helpful information. The results present in our output represent default directories for most websites, and most of the time, they do not contain files that could be exploitable or useful for an attacker in any way. However, it is still worth checking them because sometimes, they could contain non-standard files placed there by mistake.
+
 ## Foothold
+
+Since Gobuster did not find anything useful, we need to check for any default credentials or bypass the log-in page somehow. To check for default credentials, we could type the most common combinations in the username and password fields, such as:
+
+```cmd
+admin:admin
+guest:guest
+user:user
+root:root
+administrator:password
+```
+
+Here is an example of how authentication works using PHP & SQL:
+
+```php
+<?php
+mysql_connect("localhost", "db_username", "db_password"); # Connection to the SQL Database.
+mysql_select_db("users"); # Database table where user information is stored.
+
+$username = $_POST["username"]; # User-specified username.
+$password = $_POST["password"]; #User-specified password.
+
+$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+# Query for user/pass retrieval from the DB.
+
+$result = mysql_query($sql);
+# Performs query stored in $sql and stores it in $result.
+
+$count = mysql_num_rows($result);
+# Sets the $count variable to the number of rows stored in $result.
+
+if ($count == 1) {
+    # Checks if there's at least 1 result, and if yes:
+    $_SESSION["username"] = $username; # Creates a session with the specified $username.
+    $_SESSION["password"] = $password; # Creates a session with the specified $password.
+    header("location:home.php"); # Redirect to homepage.
+} else {
+    # If there's no singular result of a user/pass combination:
+    header("location:login.php");
+    # No redirection, as the login failed in the case the $count variable is not equal to 1, HTTP Response code 200 OK.
+}
+?>
+```
+
+Notice how after the `#` symbol, everything turns into a comment? This is how the PHP language works. Keep that in mind for later.
