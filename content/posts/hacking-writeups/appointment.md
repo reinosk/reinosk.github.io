@@ -6,7 +6,7 @@ description: Appointment is a box that is mostly web-application oriented. More 
 summary: Appointment is a box that is mostly web-application oriented. More specifically, we will find out how to perform an SQL Injection against an SQL Database enabled web application.
 series: ["Hacking"]
 tags: ["HackTheBox"]
-ShowToc: false
+ShowToc: true
 # TocOpen: true
 ---
 
