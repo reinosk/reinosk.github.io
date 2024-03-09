@@ -1,6 +1,6 @@
 ---
 author: "@reinosk"
-title: 怜之助 GUIDE - osu! Installation
+title: osu! Installation
 date: 2024-02-01T08:22:10.083Z
 description: This is my personal configuration for my osu! stuff on Arch Linux. No plans will be made to make a separate osu! wiki page.
 summary: This is my personal configuration for my osu! stuff on Arch Linux. No plans will be made to make a separate osu! wiki page.
