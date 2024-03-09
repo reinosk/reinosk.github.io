@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on 怜之助 | @reinosk</title>
+    <title>Programming on 怜之助</title>
     <link>http://localhost:1313/series/programming/</link>
-    <description>Recent content in Programming on 怜之助 | @reinosk</description>
+    <description>Recent content in Programming on 怜之助</description>
     <image>
-      <title>怜之助 | @reinosk</title>
+      <title>怜之助</title>
       <url>http://localhost:1313/images/raccoon.png</url>
       <link>http://localhost:1313/images/raccoon.png</link>
     </image>

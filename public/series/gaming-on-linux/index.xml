@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gaming on Linux on 怜之助 | @reinosk</title>
+    <title>Gaming on Linux on 怜之助</title>
     <link>http://localhost:1313/series/gaming-on-linux/</link>
-    <description>Recent content in Gaming on Linux on 怜之助 | @reinosk</description>
+    <description>Recent content in Gaming on Linux on 怜之助</description>
     <image>
-      <title>怜之助 | @reinosk</title>
+      <title>怜之助</title>
       <url>http://localhost:1313/images/raccoon.png</url>
       <link>http://localhost:1313/images/raccoon.png</link>
     </image>
@@ -14,7 +14,7 @@
     <lastBuildDate>Thu, 01 Feb 2024 08:22:10 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/series/gaming-on-linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>怜之助 GUIDE - osu! Installation</title>
+      <title>osu! Installation</title>
       <link>http://localhost:1313/posts/gaming-on-linux/osu/osu-installation/</link>
       <pubDate>Thu, 01 Feb 2024 08:22:10 +0000</pubDate>
       <guid>http://localhost:1313/posts/gaming-on-linux/osu/osu-installation/</guid>
