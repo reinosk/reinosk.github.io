@@ -1,6 +1,6 @@
 ---
 author: "@reinosk"
-title: HTB - Appointment Writeups
+title: Appointment Writeups
 date: 2024-02-01T01:24:34.807Z
 description: Appointment is a box that is mostly web-application oriented. More specifically, we will find out how to perform an SQL Injection against an SQL Database enabled web application.
 summary: Appointment is a box that is mostly web-application oriented. More specifically, we will find out how to perform an SQL Injection against an SQL Database enabled web application.
