@@ -2,17 +2,19 @@
 author: "@reinosk"
 title: Scavanger Hunt Write-up
 date: 2024-03-10T10:17:59.171Z
-description: There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?
-summary: There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?
+description: There is some interesting information hidden around the site. Can you find it?
+summary: There is some interesting information hidden around the site. Can you find it?
 series: ["Hacking"]
 tags: ["picoCTF"]
 ShowToc: true
 # TocOpen: true
 ---
 
-| Hints                                                                       | Targets                           |
-| --------------------------------------------------------------------------- | --------------------------------- |
-| _You should have enough hints to find the files, don't run a brute forcer._ | http://mercury.picoctf.net:44070/ |
+## Hints
+> _You should have enough hints to find the files, don't run a brute forcer._
+
+## Target
+http://mercury.picoctf.net:44070/
 
 ## Approach
 The target looks like this:
