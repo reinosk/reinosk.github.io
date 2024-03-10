@@ -7,10 +7,10 @@
 <meta name="robots" content="index, follow">
 <title>Scavanger Hunt Write-up | 怜之助</title>
 <meta name="keywords" content="picoCTF">
-<meta name="description" content="There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?">
+<meta name="description" content="There is some interesting information hidden around the site. Can you find it?">
 <meta name="author" content="@reinosk">
 <link rel="canonical" href="http://localhost:1313/posts/hacking/scavenger-hunt/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.486e02d7ab65f584a5ab8a8a0b4bcc6543d4e98f03f2e3e55432fdd29633099b.css" integrity="sha256-SG4C16tl9YSlq4qKC0vMZUPU6Y8D8uPlVDL90pYzCZs=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.66870712a155f557747e733ef5178666861b6c4b4919fde28c5581c2ab559301.css" integrity="sha256-ZocHEqFV9Vd0fnM&#43;9ReGZoYbbEtJGf3ijFWBwqtVkwE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -73,19 +73,19 @@
         }
     }
 </style><meta property="og:title" content="Scavanger Hunt Write-up" />
-<meta property="og:description" content="There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?" />
+<meta property="og:description" content="There is some interesting information hidden around the site. Can you find it?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/hacking/scavenger-hunt/" /><meta property="og:image" content="http://localhost:1313/images/raccoon.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/hacking/scavenger-hunt/" />
+<meta property="og:image" content="https://i.imgur.com/xP6QMKx.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-03-10T10:17:59+00:00" />
 <meta property="article:modified_time" content="2024-03-10T10:17:59+00:00" />
-<meta property="og:see_also" content="http://localhost:1313/posts/hacking/appointment/" />
+<meta property="og:see_also" content="http://localhost:1313/posts/hacking/pw-crack-3/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/appointment/" />
 
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/images/raccoon.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://i.imgur.com/xP6QMKx.png" />
 <meta name="twitter:title" content="Scavanger Hunt Write-up"/>
-<meta name="twitter:description" content="There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?"/>
+<meta name="twitter:description" content="There is some interesting information hidden around the site. Can you find it?"/>
 
 
 <script type="application/ld+json">
@@ -114,14 +114,14 @@
   "@type": "BlogPosting",
   "headline": "Scavanger Hunt Write-up",
   "name": "Scavanger Hunt Write-up",
-  "description": "There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?",
+  "description": "There is some interesting information hidden around the site. Can you find it?",
   "keywords": [
     "picoCTF"
   ],
-  "articleBody": " Hints Targets You should have enough hints to find the files, don’t run a brute forcer. http://mercury.picoctf.net:44070/ Approach The target looks like this: And some of info we got was from here:\n1 2 3 4 \u003clink rel=\"stylesheet\" type=\"text/css\" href=\"mycss.css\" /\u003e \u003cscript type=\"application/javascript\" src=\"myjs.js\"\u003e\u003c/script\u003e We think that there must be something inside mycss.css file and myjs.js file. Why don’t we try to open both?\nInside the mycss.css we’ve found part 2 of the flag. But we didn’t find the hardcoded part of the flag code in the myjs.js file.\nBut if we recall, the CTF game is full puzzles, and there should be a clue in the myjs.js file.\nTake a look at the bottom comment in the myjs.js file, and we know that the sentence /* How can I keep Google from indexing my website? */ is a search keyword lmao.\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 function openTab(tabName, elmnt, color) { var i, tabcontent, tablinks; tabcontent = document.getElementsByClassName(\"tabcontent\"); for (i = 0; i \u003c tabcontent.length; i++) { tabcontent[i].style.display = \"none\"; } tablinks = document.getElementsByClassName(\"tablink\"); for (i = 0; i \u003c tablinks.length; i++) { tablinks[i].style.backgroundColor = \"\"; } document.getElementById(tabName).style.display = \"block\"; if (elmnt.style != null) { elmnt.style.backgroundColor = color; } } window.onload = function () { openTab(\"tabintro\", this, \"#222\"); }; /* How can I keep Google from indexing my website? */ Reffering to indexing, namely robots.txt, perhaps we should see if there is anything in there.\nThanks GOD, part 3 of the flag has been found. however, the closing bracket isn’t written there. Meaning there’s still the next part to be found.\nNext step, we must find the next part with the keyword is an apache server. I was wondering if that meant .htaccess?\nOkay, right. And the last one is Store, and I know it will refer to the .DS_Store path.\nSummary robots.txt Robots.txt is a text file used by webmasters to instruct search engine crawlers (such as Googlebot) about which parts of a website should be indexed (given to search engines) and which should not be indexed. In the context of hacking, robots.txt can often provide useful insights to attackers. While information about what should not be indexed may not always be confidential, sometimes the information included in robots.txt can provide clues about the structure of sites, subdomains, or directories that may be attractive targets for attackers. Attackers often use this information to identify areas that may be vulnerable or important in an attack.\n.htaccess The .htaccess file is a configuration file used on Apache-based web servers. It allows users to control the server configuration for a specific directory directly through a text file. In a hacking context, attackers often look for unencrypted or vulnerable .htaccess files to take control of the server or change the server configuration unauthorisedly. Poorly configured or vulnerable .htaccess files can be leveraged by attackers to perform attacks such as redirect phishing, file access exploits, or even uploading malicious scripts.\n.DS_Store A .DS_Store file is a metadata file created by the macOS operating system to store display preferences and folder settings. While essentially harmless, in a hacking context, .DS_Store files can provide valuable information to attackers, especially if they are in a file sharing environment. .DS_Store files often store information about the files and folders within them, including the directory structure and filenames, which can give attackers insight into how the system is organised and structured. Attackers can utilise this information to plan attacks, locate sensitive files, or identify areas that may be targeted in further penetration attempts.\n",
+  "articleBody": "Hints You should have enough hints to find the files, don’t run a brute forcer.\nTarget http://mercury.picoctf.net:44070/\nApproach The target looks like this: And some of info we got was from here:\n1 2 3 4 \u003clink rel=\"stylesheet\" type=\"text/css\" href=\"mycss.css\" /\u003e \u003cscript type=\"application/javascript\" src=\"myjs.js\"\u003e\u003c/script\u003e We think that there must be something inside mycss.css file and myjs.js file. Why don’t we try to open both?\nInside the mycss.css we’ve found part 2 of the flag. But we didn’t find the hardcoded part of the flag code in the myjs.js file.\nBut if we recall, the CTF game is full puzzles, and there should be a clue in the myjs.js file.\nTake a look at the bottom comment in the myjs.js file, and we know that the sentence /* How can I keep Google from indexing my website? */ is a search keyword lmao.\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 function openTab(tabName, elmnt, color) { var i, tabcontent, tablinks; tabcontent = document.getElementsByClassName(\"tabcontent\"); for (i = 0; i \u003c tabcontent.length; i++) { tabcontent[i].style.display = \"none\"; } tablinks = document.getElementsByClassName(\"tablink\"); for (i = 0; i \u003c tablinks.length; i++) { tablinks[i].style.backgroundColor = \"\"; } document.getElementById(tabName).style.display = \"block\"; if (elmnt.style != null) { elmnt.style.backgroundColor = color; } } window.onload = function () { openTab(\"tabintro\", this, \"#222\"); }; /* How can I keep Google from indexing my website? */ Reffering to indexing, namely robots.txt, perhaps we should see if there is anything in there.\nThanks GOD, part 3 of the flag has been found. however, the closing bracket isn’t written there. Meaning there’s still the next part to be found.\nNext step, we must find the next part with the keyword is an apache server. I was wondering if that meant .htaccess?\nOkay, right. And the last one is Store, and I know it will refer to the .DS_Store path.\nSummary robots.txt Robots.txt is a text file used by webmasters to instruct search engine crawlers (such as Googlebot) about which parts of a website should be indexed (given to search engines) and which should not be indexed. In the context of hacking, robots.txt can often provide useful insights to attackers. While information about what should not be indexed may not always be confidential, sometimes the information included in robots.txt can provide clues about the structure of sites, subdomains, or directories that may be attractive targets for attackers. Attackers often use this information to identify areas that may be vulnerable or important in an attack.\n.htaccess The .htaccess file is a configuration file used on Apache-based web servers. It allows users to control the server configuration for a specific directory directly through a text file. In a hacking context, attackers often look for unencrypted or vulnerable .htaccess files to take control of the server or change the server configuration unauthorisedly. Poorly configured or vulnerable .htaccess files can be leveraged by attackers to perform attacks such as redirect phishing, file access exploits, or even uploading malicious scripts.\n.DS_Store A .DS_Store file is a metadata file created by the macOS operating system to store display preferences and folder settings. While essentially harmless, in a hacking context, .DS_Store files can provide valuable information to attackers, especially if they are in a file sharing environment. .DS_Store files often store information about the files and folders within them, including the directory structure and filenames, which can give attackers insight into how the system is organised and structured. Attackers can utilise this information to plan attacks, locate sensitive files, or identify areas that may be targeted in further penetration attempts.\n",
   "wordCount" : "611",
   "inLanguage": "en",
-  "datePublished": "2024-03-10T10:17:59Z",
+  "image":"https://i.imgur.com/xP6QMKx.png","datePublished": "2024-03-10T10:17:59Z",
   "dateModified": "2024-03-10T10:17:59Z",
   "author":{
     "@type": "Person",
@@ -160,7 +160,7 @@
         <div class="logo">
             <a href="http://localhost:1313/" accesskey="h" title="怜之助 (Alt + H)">
                         
-                    <img src="http://localhost:1313/images/raccoon_hu74e45ba7859dba5a65e66ed289cb50ed_1001077_0x35_resize_box_3.png" alt="" aria-label="logo"
+                    <img src="http://localhost:1313/images/null_hude0666c8844d737ba7101651f643cc82_13292_0x35_resize_box_3.png" alt="" aria-label="logo"
                         height="35">怜之助</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -229,18 +229,25 @@
       Scavanger Hunt Write-up
     </h1>
     <div class="post-description">
-      There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?
+      There is some interesting information hidden around the site. Can you find it?
     </div>
     <div class="post-meta"><span title='2024-03-10 10:17:59.171 +0000 UTC'>March 10, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;@reinosk&nbsp;|&nbsp;<a href="https://github.com/reinosk/reinosk.github.io/tree/master/content/posts/hacking/scavenger-hunt.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
-  </header> <div class="toc">
-    <details >
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="https://i.imgur.com/xP6QMKx.png" alt="">
+        
+</figure><div class="toc">
+    <details  open>
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">On This Page</span>
         </summary>
 
         <div class="inner"><ul>
+                <li>
+                    <a href="#hints" aria-label="Hints">Hints</a></li>
+                <li>
+                    <a href="#target" aria-label="Target">Target</a></li>
                 <li>
                     <a href="#approach" aria-label="Approach">Approach</a></li>
                 <li>
@@ -260,20 +267,12 @@
     </details>
 </div>
 
-  <div class="post-content"><table>
-<thead>
-<tr>
-<th>Hints</th>
-<th>Targets</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>You should have enough hints to find the files, don&rsquo;t run a brute forcer.</em></td>
-<td><a href="http://mercury.picoctf.net:44070/">http://mercury.picoctf.net:44070/</a></td>
-</tr>
-</tbody>
-</table>
+  <div class="post-content"><h2 id="hints">Hints<a hidden class="anchor" aria-hidden="true" href="#hints">#</a></h2>
+<blockquote>
+<p><em>You should have enough hints to find the files, don&rsquo;t run a brute forcer.</em></p>
+</blockquote>
+<h2 id="target">Target<a hidden class="anchor" aria-hidden="true" href="#target">#</a></h2>
+<p><a href="http://mercury.picoctf.net:44070/">http://mercury.picoctf.net:44070/</a></p>
 <h2 id="approach">Approach<a hidden class="anchor" aria-hidden="true" href="#approach">#</a></h2>
 <p>The target looks like this:
 
@@ -389,10 +388,15 @@
       <li><a href="http://localhost:1313/tags/picoctf/">PicoCTF</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="http://localhost:1313/posts/programming/ts/chapter-1-ts-introduction/">
+  <a class="prev" href="http://localhost:1313/posts/hacking/pw-crack-3/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>PW Crack 3 Write-up</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/programming/ts/introduction/">
     <span class="title">Next »</span>
     <br>
-    <span>Talking about TypeScript | Chapter 1 - Introduction</span>
+    <span>Talking about TypeScript | Part 1 - Introduction</span>
   </a>
 </nav>
 

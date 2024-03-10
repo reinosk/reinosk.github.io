@@ -8,7 +8,7 @@ series: ["Gaming on Linux"]
 # cover: 
 #   image: https://imgur.com/uJ2GTeX.png
 ShowToc: true
-# TocOpen: true
+TocOpen: true
 ---
 
 > *This guide implies you have read [Help:Reading](https://wiki.archlinux.org/title/Help:Reading) and/or know your ways around Linux. In case you're using a different distribution, you can try [hwsmm's guide](https://gist.github.com/hwsmm/ba73a5cd82e17cec14fe8d2cc2a8d32d).*

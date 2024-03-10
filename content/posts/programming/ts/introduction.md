@@ -9,13 +9,8 @@ series: ["Programming"]
     # image: https://i.imgur.com/qjvbHjk.png
 tags: ["TypeScript"]
 ShowToc: true
-# TocOpen: true
+TocOpen: true
 ---
-
-
-> See also:
->
-> **[Talking about TypeScript | Part 2 - TypeScript for Smashing People](https://reinosk.github.io/posts/programming/ts/ts-for-smashing-people/) ⚠️🚧**
 
 ## Introduction
 

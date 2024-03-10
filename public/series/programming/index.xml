@@ -6,18 +6,18 @@
     <description>Recent content in Programming on 怜之助</description>
     <image>
       <title>怜之助</title>
-      <url>http://localhost:1313/images/raccoon.png</url>
-      <link>http://localhost:1313/images/raccoon.png</link>
+      <url>http://localhost:1313/images/null.png</url>
+      <link>http://localhost:1313/images/null.png</link>
     </image>
     <generator>reinosk - reinosk.github.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 03 Feb 2024 05:57:36 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/series/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Talking about TypeScript | Chapter 1 - Introduction</title>
-      <link>http://localhost:1313/posts/programming/ts/chapter-1-ts-introduction/</link>
+      <title>Talking about TypeScript | Part 1 - Introduction</title>
+      <link>http://localhost:1313/posts/programming/ts/introduction/</link>
       <pubDate>Sat, 03 Feb 2024 05:57:36 +0000</pubDate>
-      <guid>http://localhost:1313/posts/programming/ts/chapter-1-ts-introduction/</guid>
+      <guid>http://localhost:1313/posts/programming/ts/introduction/</guid>
       <description>a collection of TypeScript recipes that showcase the awesome power of TypeScript!</description>
     </item>
   </channel>

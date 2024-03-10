@@ -6,19 +6,26 @@
     <description>Recent content in PicoCTF on 怜之助</description>
     <image>
       <title>怜之助</title>
-      <url>http://localhost:1313/images/raccoon.png</url>
-      <link>http://localhost:1313/images/raccoon.png</link>
+      <url>http://localhost:1313/images/null.png</url>
+      <link>http://localhost:1313/images/null.png</link>
     </image>
     <generator>reinosk - reinosk.github.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Mar 2024 10:17:59 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2024 13:31:25 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/picoctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PW Crack 3 Write-up</title>
+      <link>http://localhost:1313/posts/hacking/pw-crack-3/</link>
+      <pubDate>Sun, 10 Mar 2024 13:31:25 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hacking/pw-crack-3/</guid>
+      <description>Can you crack the password to get the flag?</description>
+    </item>
     <item>
       <title>Scavanger Hunt Write-up</title>
       <link>http://localhost:1313/posts/hacking/scavenger-hunt/</link>
       <pubDate>Sun, 10 Mar 2024 10:17:59 +0000</pubDate>
       <guid>http://localhost:1313/posts/hacking/scavenger-hunt/</guid>
-      <description>There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?</description>
+      <description>There is some interesting information hidden around the site. Can you find it?</description>
     </item>
   </channel>
 </rss>
