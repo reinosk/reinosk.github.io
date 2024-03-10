@@ -1,6 +1,6 @@
 ---
 author: "@reinosk"
-title: Talking about TypeScript | Chapter 1 - Introduction
+title: Talking about TypeScript | Part 1 - Introduction
 date: 2024-02-03T05:57:36.920Z
 description: a collection of TypeScript recipes that showcase the awesome power of TypeScript!
 summary: a collection of TypeScript recipes that showcase the awesome power of TypeScript!
@@ -15,7 +15,7 @@ ShowToc: true
 
 > See also:
 >
-> **[Talking about TypeScript | Part II - TypeScript for Smashing People](https://reinosk.github.io/posts/programming/ts/part-ii-ts-for-smashing-people/) ⚠️🚧**
+> **[Talking about TypeScript | Part 2 - TypeScript for Smashing People](https://reinosk.github.io/posts/programming/ts/ts-for-smashing-people/) ⚠️🚧**
 
 ## Introduction
 
