@@ -21,7 +21,7 @@ TocOpen: true
 
 We can try to crack the password using the list of possible passwords. `hashlib` is library to hash the passwords and compare them to the hash file. We will create a new crack code to compare hashes.
 
-```py
+```py { linenos=table }
 import hashlib
 
 correct_pw_hash = open('level3.hash.bin', 'rb').read()
@@ -43,10 +43,14 @@ for pw in pos_pw_list:
 
 running command:
 
-```shell
+```cmd
 $ python3 crack.py
 
 The password is: 865e
 ```
 
 ![...](https://i.ibb.co/vqQy2Jb/image.png#center)
+
+## Summary
+
+Describes an approach to solving the challenge by utilising the hashlib library in Python to hash possible passwords and compare them to the provided hashes. A Python script is provided to iterate through the list of possible passwords and hash them, then compare the hashes to the provided hash file. Upon successful comparison, the correct password will be revealed, allowing access to the flag.
