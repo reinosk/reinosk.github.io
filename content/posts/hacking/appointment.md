@@ -117,7 +117,7 @@ administrator:password
 
 Here is an example of how authentication works using PHP & SQL:
 
-```php
+```php { linenos=table }
 <?php
 mysql_connect("localhost", "db_username", "db_password"); # Connection to the SQL Database.
 mysql_select_db("users"); # Database table where user information is stored.
