@@ -11,8 +11,15 @@
     </image>
     <generator>reinosk - reinosk.github.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Feb 2024 05:57:36 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2024 10:17:59 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scavanger Hunt Write-up</title>
+      <link>http://localhost:1313/posts/hacking/scavenger-hunt/</link>
+      <pubDate>Sun, 10 Mar 2024 10:17:59 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hacking/scavenger-hunt/</guid>
+      <description>There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?</description>
+    </item>
     <item>
       <title>Talking about TypeScript | Chapter 1 - Introduction</title>
       <link>http://localhost:1313/posts/programming/ts/chapter-1-ts-introduction/</link>

@@ -20,5 +20,12 @@
       <guid>http://localhost:1313/posts/hacking/appointment/</guid>
       <description>Appointment is a box that is mostly web-application oriented. More specifically, we will find out how to perform an SQL Injection against an SQL Database enabled web application.</description>
     </item>
+    <item>
+      <title>Scavanger Hunt Write-up</title>
+      <link>http://localhost:1313/posts/hacking/scavenger-hunt/</link>
+      <pubDate>Thu, 01 Feb 2024 01:24:34 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hacking/scavenger-hunt/</guid>
+      <description>There is some interesting information hidden around this site http://mercury.picoctf.net:44070/. Can you find it?</description>
+    </item>
   </channel>
 </rss>
