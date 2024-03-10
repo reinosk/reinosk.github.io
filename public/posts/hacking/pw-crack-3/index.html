@@ -118,8 +118,8 @@
   "keywords": [
     "picoCTF"
   ],
-  "articleBody": "Hints Can you crack the password to get the flag? Download the password checker here and you’ll need the encrypted flag and the hash in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.\nTarget Approach ",
-  "wordCount" : "50",
+  "articleBody": "Hints Can you crack the password to get the flag? Download the password checker here and you’ll need the encrypted flag and the hash in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.\nApproach We can try to crack the password using the list of possible passwords. hashlib is library to hash the passwords and compare them to the hash file. We will create a new crack code to compare hashes.\nimport hashlib correct_pw_hash = open('level3.hash.bin', 'rb').read() def hash_pw(pw_str): pw_bytes = bytearray() pw_bytes.extend(pw_str.encode()) m = hashlib.md5() m.update(pw_bytes) return m.digest() pos_pw_list = [\"6997\", \"3ac8\", \"f0ac\", \"4b17\", \"ec27\", \"4e66\", \"865e\"] for pw in pos_pw_list: if hash_pw(pw) == correct_pw_hash: print(\"The password is: \" + pw) running command:\n$ python3 crack.py The password is: 865e ",
+  "wordCount" : "136",
   "inLanguage": "en",
   "image":"https://i.imgur.com/CNVmqIv.png","datePublished": "2024-03-10T13:31:25Z",
   "dateModified": "2024-03-10T13:31:25Z",
@@ -247,8 +247,6 @@
                 <li>
                     <a href="#hints" aria-label="Hints">Hints</a></li>
                 <li>
-                    <a href="#target" aria-label="Target">Target</a></li>
-                <li>
                     <a href="#approach" aria-label="Approach">Approach</a>
                 </li>
             </ul>
@@ -258,10 +256,48 @@
 
   <div class="post-content"><h2 id="hints">Hints<a hidden class="anchor" aria-hidden="true" href="#hints">#</a></h2>
 <blockquote>
-<p><em>Can you crack the password to get the flag? Download the password checker here and you&rsquo;ll need the encrypted flag and the hash in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.</em></p>
+<p><em>Can you crack the password to get the flag? Download the password checker <a href="https://artifacts.picoctf.net/c/16/level3.py">here</a> and you&rsquo;ll need the encrypted <a href="https://artifacts.picoctf.net/c/16/level3.flag.txt.enc">flag</a> and the <a href="https://artifacts.picoctf.net/c/16/level3.hash.bin">hash</a> in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.</em></p>
 </blockquote>
-<h2 id="target">Target<a hidden class="anchor" aria-hidden="true" href="#target">#</a></h2>
 <h2 id="approach">Approach<a hidden class="anchor" aria-hidden="true" href="#approach">#</a></h2>
+<p>
+
+<input type="checkbox" id="zoomCheck-0217e" hidden>
+<label for="zoomCheck-0217e">
+    <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.ibb.co/YpckCS2/image.png#center" alt="&amp;hellip;"  />
+</label></p>
+<p>We can try to crack the password using the list of possible passwords. <code>hashlib</code> is library to hash the passwords and compare them to the hash file. We will create a new crack code to compare hashes.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hashlib</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">correct_pw_hash</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;level3.hash.bin&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">hash_pw</span><span class="p">(</span><span class="n">pw_str</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pw_bytes</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pw_bytes</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">pw_str</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">pw_bytes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pos_pw_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;6997&#34;</span><span class="p">,</span> <span class="s2">&#34;3ac8&#34;</span><span class="p">,</span> <span class="s2">&#34;f0ac&#34;</span><span class="p">,</span> <span class="s2">&#34;4b17&#34;</span><span class="p">,</span> <span class="s2">&#34;ec27&#34;</span><span class="p">,</span> <span class="s2">&#34;4e66&#34;</span><span class="p">,</span> <span class="s2">&#34;865e&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">pw</span> <span class="ow">in</span> <span class="n">pos_pw_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">hash_pw</span><span class="p">(</span><span class="n">pw</span><span class="p">)</span> <span class="o">==</span> <span class="n">correct_pw_hash</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;The password is: &#34;</span> <span class="o">+</span> <span class="n">pw</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+<input type="checkbox" id="zoomCheck-95149" hidden>
+<label for="zoomCheck-95149">
+    <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.imgur.com/h9AZGxh.png#center" alt="&amp;hellip;"  />
+</label></p>
+<p>running command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ python3 crack.py
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">The password is: 865e
+</span></span></code></pre></div><p>
+
+<input type="checkbox" id="zoomCheck-66d04" hidden>
+<label for="zoomCheck-66d04">
+    <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.ibb.co/vqQy2Jb/image.png#center" alt="&amp;hellip;"  />
+</label></p>
 
 
   </div>
