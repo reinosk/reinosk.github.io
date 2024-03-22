@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/echoctf/</loc>
+    <lastmod>2024-03-10T13:31:25+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/hacking/echoctf-101/</loc>
+    <lastmod>2024-03-10T13:31:25+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/series/hacking/</loc>
     <lastmod>2024-03-10T13:31:25+00:00</lastmod>
   </url><url>
@@ -12,6 +18,9 @@
     <lastmod>2024-03-10T13:31:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/hacking/pw-crack-3/</loc>
+    <lastmod>2024-03-10T13:31:25+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/hacking/pw-crack-5/</loc>
     <lastmod>2024-03-10T13:31:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/</loc>

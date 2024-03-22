@@ -79,7 +79,7 @@
 <meta property="og:image" content="https://i.imgur.com/CNVmqIv.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-03-10T13:31:25+00:00" />
 <meta property="article:modified_time" content="2024-03-10T13:31:25+00:00" />
-<meta property="og:see_also" content="http://localhost:1313/posts/hacking/scavenger-hunt/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/appointment/" />
+<meta property="og:see_also" content="http://localhost:1313/posts/hacking/pw-crack-5/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/scavenger-hunt/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/appointment/" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
@@ -118,11 +118,11 @@
   "keywords": [
     "picoCTF"
   ],
-  "articleBody": "Hints Can you crack the password to get the flag? Download the password checker here and you’ll need the encrypted flag and the hash in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.\nApproach We can try to crack the password using the list of possible passwords. hashlib is library to hash the passwords and compare them to the hash file. We will create a new crack code to compare hashes.\nimport hashlib correct_pw_hash = open('level3.hash.bin', 'rb').read() def hash_pw(pw_str): pw_bytes = bytearray() pw_bytes.extend(pw_str.encode()) m = hashlib.md5() m.update(pw_bytes) return m.digest() pos_pw_list = [\"6997\", \"3ac8\", \"f0ac\", \"4b17\", \"ec27\", \"4e66\", \"865e\"] for pw in pos_pw_list: if hash_pw(pw) == correct_pw_hash: print(\"The password is: \" + pw) running command:\n$ python3 crack.py The password is: 865e ",
-  "wordCount" : "136",
+  "articleBody": "Hints Can you crack the password to get the flag? Download the password checker here and you’ll need the encrypted flag and the hash in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.\nApproach We can try to crack the password using the list of possible passwords. hashlib is library to hash the passwords and compare them to the hash file. We will create a new crack code to compare hashes.\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 import hashlib correct_pw_hash = open('level3.hash.bin', 'rb').read() def hash_pw(pw_str): pw_bytes = bytearray() pw_bytes.extend(pw_str.encode()) m = hashlib.md5() m.update(pw_bytes) return m.digest() pos_pw_list = [\"6997\", \"3ac8\", \"f0ac\", \"4b17\", \"ec27\", \"4e66\", \"865e\"] for pw in pos_pw_list: if hash_pw(pw) == correct_pw_hash: print(\"The password is: \" + pw) running command:\n$ python3 crack.py The password is: 865e Summary Describes an approach to solving the challenge by utilising the hashlib library in Python to hash possible passwords and compare them to the provided hashes. A Python script is provided to iterate through the list of possible passwords and hash them, then compare the hashes to the provided hash file. Upon successful comparison, the correct password will be revealed, allowing access to the flag.\n",
+  "wordCount" : "217",
   "inLanguage": "en",
-  "image":"https://i.imgur.com/CNVmqIv.png","datePublished": "2024-03-10T13:31:25Z",
-  "dateModified": "2024-03-10T13:31:25Z",
+  "image":"https://i.imgur.com/CNVmqIv.png","datePublished": "2024-03-10T13:31:25.611Z",
+  "dateModified": "2024-03-10T13:31:25.611Z",
   "author":{
     "@type": "Person",
     "name": "@reinosk"
@@ -231,7 +231,7 @@
     <div class="post-description">
       Can you crack the password to get the flag?
     </div>
-    <div class="post-meta"><span title='2024-03-10 13:31:25.611 +0000 UTC'>March 10, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;@reinosk&nbsp;|&nbsp;<a href="https://github.com/reinosk/reinosk.github.io/tree/master/content/posts/hacking/pw-crack-3.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2024-03-10 13:31:25.611 +0000 UTC'>March 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;@reinosk&nbsp;|&nbsp;<a href="https://github.com/reinosk/reinosk.github.io/tree/master/content/posts/hacking/pw-crack-3.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> 
@@ -247,7 +247,9 @@
                 <li>
                     <a href="#hints" aria-label="Hints">Hints</a></li>
                 <li>
-                    <a href="#approach" aria-label="Approach">Approach</a>
+                    <a href="#approach" aria-label="Approach">Approach</a></li>
+                <li>
+                    <a href="#summary" aria-label="Summary">Summary</a>
                 </li>
             </ul>
         </div>
@@ -266,7 +268,27 @@
     <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.ibb.co/YpckCS2/image.png#center" alt="&amp;hellip;"  />
 </label></p>
 <p>We can try to crack the password using the list of possible passwords. <code>hashlib</code> is library to hash the passwords and compare them to the hash file. We will create a new crack code to compare hashes.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hashlib</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hashlib</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">correct_pw_hash</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;level3.hash.bin&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
@@ -282,14 +304,16 @@
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">pw</span> <span class="ow">in</span> <span class="n">pos_pw_list</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">hash_pw</span><span class="p">(</span><span class="n">pw</span><span class="p">)</span> <span class="o">==</span> <span class="n">correct_pw_hash</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;The password is: &#34;</span> <span class="o">+</span> <span class="n">pw</span><span class="p">)</span>
-</span></span></code></pre></div><p>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
 
 <input type="checkbox" id="zoomCheck-95149" hidden>
 <label for="zoomCheck-95149">
     <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.imgur.com/h9AZGxh.png#center" alt="&amp;hellip;"  />
 </label></p>
 <p>running command:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ python3 crack.py
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ python3 crack.py
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">The password is: 865e
 </span></span></code></pre></div><p>
@@ -298,6 +322,8 @@
 <label for="zoomCheck-66d04">
     <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.ibb.co/vqQy2Jb/image.png#center" alt="&amp;hellip;"  />
 </label></p>
+<h2 id="summary">Summary<a hidden class="anchor" aria-hidden="true" href="#summary">#</a></h2>
+<p>Describes an approach to solving the challenge by utilising the hashlib library in Python to hash possible passwords and compare them to the provided hashes. A Python script is provided to iterate through the list of possible passwords and hash them, then compare the hashes to the provided hash file. Upon successful comparison, the correct password will be revealed, allowing access to the flag.</p>
 
 
   </div>
@@ -307,6 +333,11 @@
       <li><a href="http://localhost:1313/tags/picoctf/">PicoCTF</a></li>
     </ul>
 <nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/hacking/pw-crack-5/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>PW Crack 5 Write-up</span>
+  </a>
   <a class="next" href="http://localhost:1313/posts/hacking/scavenger-hunt/">
     <span class="title">Next »</span>
     <br>
