@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CEH V12 on 怜之助</title>
+    <link>http://localhost:1313/tags/ceh-v12/</link>
+    <description>Recent content in CEH V12 on 怜之助</description>
+    <image>
+      <title>怜之助</title>
+      <url>http://localhost:1313/images/null.png</url>
+      <link>http://localhost:1313/images/null.png</link>
+    </image>
+    <generator>reinosk - reinosk.github.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 22 Mar 2024 19:41:07 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ceh-v12/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cehv12m1-v0.0.1</title>
+      <link>http://localhost:1313/posts/hacking/cehv12m1-v001/</link>
+      <pubDate>Fri, 22 Mar 2024 19:41:07 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hacking/cehv12m1-v001/</guid>
+      <description>Attackers break into systems for various reasons and purposes. Therefore, it&amp;#39;s important to understand how malicious hackers attack and exploit systems and probable reasons behind these attacks.</description>
+    </item>
+  </channel>
+</rss>

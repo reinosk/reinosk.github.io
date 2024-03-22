@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>PW Crack 3 | 怜之助</title>
-<meta name="keywords" content="picoCTF">
-<meta name="description" content="Can you crack the password to get the flag?">
+<title>cehv12m1-v0.0.1 | 怜之助</title>
+<meta name="keywords" content="CEH v12">
+<meta name="description" content="Attackers break into systems for various reasons and purposes. Therefore, it&#39;s important to understand how malicious hackers attack and exploit systems and probable reasons behind these attacks.">
 <meta name="author" content="@reinosk">
-<link rel="canonical" href="http://localhost:1313/posts/hacking/pw-crack-3/">
+<link rel="canonical" href="http://localhost:1313/posts/hacking/cehv12m1-v1/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.66870712a155f557747e733ef5178666861b6c4b4919fde28c5581c2ab559301.css" integrity="sha256-ZocHEqFV9Vd0fnM&#43;9ReGZoYbbEtJGf3ijFWBwqtVkwE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/hacking/pw-crack-3/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/hacking/cehv12m1-v1/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,20 +72,20 @@
             cursor: zoom-in;
         }
     }
-</style><meta property="og:title" content="PW Crack 3" />
-<meta property="og:description" content="Can you crack the password to get the flag?" />
+</style><meta property="og:title" content="cehv12m1-v0.0.1" />
+<meta property="og:description" content="Attackers break into systems for various reasons and purposes. Therefore, it&#39;s important to understand how malicious hackers attack and exploit systems and probable reasons behind these attacks." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/hacking/pw-crack-3/" /><meta property="og:image" content="http://localhost:1313/images/null.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-03-10T13:31:25+00:00" />
-<meta property="article:modified_time" content="2024-03-10T13:31:25+00:00" />
-<meta property="og:see_also" content="http://localhost:1313/posts/hacking/cehv12m1-v001/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/pw-crack-5/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/scavenger-hunt/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/appointment/" />
+<meta property="og:url" content="http://localhost:1313/posts/hacking/cehv12m1-v1/" /><meta property="og:image" content="http://localhost:1313/images/null.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-22T19:41:07+00:00" />
+<meta property="article:modified_time" content="2024-03-22T19:41:07+00:00" />
+<meta property="og:see_also" content="http://localhost:1313/posts/hacking/pw-crack-5/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/pw-crack-3/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/scavenger-hunt/" /><meta property="og:see_also" content="http://localhost:1313/posts/hacking/appointment/" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://localhost:1313/images/null.png"/>
 
-<meta name="twitter:title" content="PW Crack 3"/>
-<meta name="twitter:description" content="Can you crack the password to get the flag?"/>
+<meta name="twitter:title" content="cehv12m1-v0.0.1"/>
+<meta name="twitter:description" content="Attackers break into systems for various reasons and purposes. Therefore, it&#39;s important to understand how malicious hackers attack and exploit systems and probable reasons behind these attacks."/>
 
 
 <script type="application/ld+json">
@@ -102,8 +102,8 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "PW Crack 3",
-      "item": "http://localhost:1313/posts/hacking/pw-crack-3/"
+      "name": "cehv12m1-v0.0.1",
+      "item": "http://localhost:1313/posts/hacking/cehv12m1-v1/"
     }
   ]
 }
@@ -112,24 +112,24 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "PW Crack 3",
-  "name": "PW Crack 3",
-  "description": "Can you crack the password to get the flag?",
+  "headline": "cehv12m1-v0.0.1",
+  "name": "cehv12m1-v0.0.1",
+  "description": "Attackers break into systems for various reasons and purposes. Therefore, it's important to understand how malicious hackers attack and exploit systems and probable reasons behind these attacks.",
   "keywords": [
-    "picoCTF"
+    "CEH v12"
   ],
-  "articleBody": "Hints Can you crack the password to get the flag? Download the password checker here and you’ll need the encrypted flag and the hash in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.\nApproach We can try to crack the password using the list of possible passwords. hashlib is library to hash the passwords and compare them to the hash file. We will create a new crack code to compare hashes.\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 import hashlib correct_pw_hash = open('level3.hash.bin', 'rb').read() def hash_pw(pw_str): pw_bytes = bytearray() pw_bytes.extend(pw_str.encode()) m = hashlib.md5() m.update(pw_bytes) return m.digest() pos_pw_list = [\"6997\", \"3ac8\", \"f0ac\", \"4b17\", \"ec27\", \"4e66\", \"865e\"] for pw in pos_pw_list: if hash_pw(pw) == correct_pw_hash: print(\"The password is: \" + pw) running command:\n$ python3 crack.py The password is: 865e Summary Describes an approach to solving the challenge by utilising the hashlib library in Python to hash possible passwords and compare them to the provided hashes. A Python script is provided to iterate through the list of possible passwords and hash them, then compare the hashes to the provided hash file. Upon successful comparison, the correct password will be revealed, allowing access to the flag.\n",
-  "wordCount" : "217",
+  "articleBody": "Prerequisites OS File system Computer network Data leakage Risk management TCP/IP protocols Information security controls Basic networking troubleshooting Data backup Classification of Attacks Passive Attacks PA do not tamper with the data and involve intercepting and monitoring network traffic and data flow on the target network.\nExamples of PA:\nFootprinting Sniffing and eavesdropping Network traffic analysis Decryption of weakly encrypted traffic Active Attacks AA tamper with the data in transit or disrupt the communication/services between the systems to bypass or break into secured systems.\nExamples of AA:\nDoS attack Bypassing protection mechanisms Malware attacks (such as viruses, worms, ransomeware) Modification of information Spoofing attacks Replay attacks Password-based attacks Session hijacking MitM attack DNS and ARP poisoning Compromised-key attack Firewall and IDS attack Profiling Arbitrary code execution Privilege escalation Backdoor access Cryptography attacks SQL injection XSS attacks Directory traversal attacks Exploitation of application and OS software Close-in Attacks CA are performed when the attacker is close physical proximity with the target system or network in order to gather, modify, or disrupt access to information.\nExample of CA:\nSocial engineering (eavesdropping, shoulder surfing, dumpster diving, and other methods) Insider Attacks IA involve using privileged access to violate rules or intentionally cause a threat to the organization’s information systems.\nExamples of IA:\nEavesdropping and wiretapping Social engineering Data theft and spoliation Pod slurping Theft of physical devices Planting keyloggers, backdoors, or malware Distribution Attacks DA occur when attackers tampir with hardware or software prior to installation.\nExamples of DA:\nModification of software or hardware during production Modification of software or hardware during distribution ",
+  "wordCount" : "260",
   "inLanguage": "en",
-  "datePublished": "2024-03-10T13:31:25.611Z",
-  "dateModified": "2024-03-10T13:31:25.611Z",
+  "datePublished": "2024-03-22T19:41:07.3Z",
+  "dateModified": "2024-03-22T19:41:07.3Z",
   "author":{
     "@type": "Person",
     "name": "@reinosk"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/posts/hacking/pw-crack-3/"
+    "@id": "http://localhost:1313/posts/hacking/cehv12m1-v1/"
   },
   "publisher": {
     "@type": "Organization",
@@ -226,12 +226,12 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      PW Crack 3
+      cehv12m1-v0.0.1
     </h1>
     <div class="post-description">
-      Can you crack the password to get the flag?
+      Attackers break into systems for various reasons and purposes. Therefore, it&#39;s important to understand how malicious hackers attack and exploit systems and probable reasons behind these attacks.
     </div>
-    <div class="post-meta"><span title='2024-03-10 13:31:25.611 +0000 UTC'>March 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;@reinosk&nbsp;|&nbsp;<a href="https://github.com/reinosk/reinosk.github.io/tree/master/content/posts/hacking/pw-crack-3.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2024-03-22 19:41:07.3 +0000 UTC'>March 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;@reinosk&nbsp;|&nbsp;<a href="https://github.com/reinosk/reinosk.github.io/tree/master/content/posts/hacking/cehv12m1-v1.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> <div class="toc">
@@ -242,111 +242,121 @@
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#hints" aria-label="Hints">Hints</a></li>
+                    <a href="#prerequisites" aria-label="Prerequisites">Prerequisites</a></li>
                 <li>
-                    <a href="#approach" aria-label="Approach">Approach</a></li>
+                    <a href="#classification-of-attacks" aria-label="Classification of Attacks">Classification of Attacks</a><ul>
+                        
                 <li>
-                    <a href="#summary" aria-label="Summary">Summary</a>
+                    <a href="#passive-attacks" aria-label="Passive Attacks">Passive Attacks</a></li>
+                <li>
+                    <a href="#active-attacks" aria-label="Active Attacks">Active Attacks</a></li>
+                <li>
+                    <a href="#close-in-attacks" aria-label="Close-in Attacks">Close-in Attacks</a></li>
+                <li>
+                    <a href="#insider-attacks" aria-label="Insider Attacks">Insider Attacks</a></li>
+                <li>
+                    <a href="#distribution-attacks" aria-label="Distribution Attacks">Distribution Attacks</a>
                 </li>
+            </ul>
+            </li>
             </ul>
         </div>
     </details>
 </div>
 
-  <div class="post-content"><h2 id="hints">Hints<a hidden class="anchor" aria-hidden="true" href="#hints">#</a></h2>
-<blockquote>
-<p><em>Can you crack the password to get the flag? Download the password checker <a href="https://artifacts.picoctf.net/c/16/level3.py">here</a> and you&rsquo;ll need the encrypted <a href="https://artifacts.picoctf.net/c/16/level3.flag.txt.enc">flag</a> and the <a href="https://artifacts.picoctf.net/c/16/level3.hash.bin">hash</a> in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.</em></p>
-</blockquote>
-<h2 id="approach">Approach<a hidden class="anchor" aria-hidden="true" href="#approach">#</a></h2>
-<p>
-
-<input type="checkbox" id="zoomCheck-0217e" hidden>
-<label for="zoomCheck-0217e">
-    <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.ibb.co/YpckCS2/image.png#center" alt="&amp;hellip;"  />
-</label></p>
-<p>We can try to crack the password using the list of possible passwords. <code>hashlib</code> is library to hash the passwords and compare them to the hash file. We will create a new crack code to compare hashes.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hashlib</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">correct_pw_hash</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;level3.hash.bin&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">hash_pw</span><span class="p">(</span><span class="n">pw_str</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">pw_bytes</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">pw_bytes</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">pw_str</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">pw_bytes</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">pos_pw_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;6997&#34;</span><span class="p">,</span> <span class="s2">&#34;3ac8&#34;</span><span class="p">,</span> <span class="s2">&#34;f0ac&#34;</span><span class="p">,</span> <span class="s2">&#34;4b17&#34;</span><span class="p">,</span> <span class="s2">&#34;ec27&#34;</span><span class="p">,</span> <span class="s2">&#34;4e66&#34;</span><span class="p">,</span> <span class="s2">&#34;865e&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">pw</span> <span class="ow">in</span> <span class="n">pos_pw_list</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">hash_pw</span><span class="p">(</span><span class="n">pw</span><span class="p">)</span> <span class="o">==</span> <span class="n">correct_pw_hash</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;The password is: &#34;</span> <span class="o">+</span> <span class="n">pw</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-
-<input type="checkbox" id="zoomCheck-95149" hidden>
-<label for="zoomCheck-95149">
-    <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.imgur.com/h9AZGxh.png#center" alt="&amp;hellip;"  />
-</label></p>
-<p>running command:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ python3 crack.py
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">The password is: 865e
-</span></span></code></pre></div><p>
-
-<input type="checkbox" id="zoomCheck-66d04" hidden>
-<label for="zoomCheck-66d04">
-    <img class="zoomCheck" loading="lazy" decoding="async" src="https://i.ibb.co/vqQy2Jb/image.png#center" alt="&amp;hellip;"  />
-</label></p>
-<h2 id="summary">Summary<a hidden class="anchor" aria-hidden="true" href="#summary">#</a></h2>
-<p>Describes an approach to solving the challenge by utilising the hashlib library in Python to hash possible passwords and compare them to the provided hashes. A Python script is provided to iterate through the list of possible passwords and hash them, then compare the hashes to the provided hash file. Upon successful comparison, the correct password will be revealed, allowing access to the flag.</p>
+  <div class="post-content"><h2 id="prerequisites">Prerequisites<a hidden class="anchor" aria-hidden="true" href="#prerequisites">#</a></h2>
+<ul>
+<li>OS</li>
+<li>File system</li>
+<li>Computer network</li>
+<li>Data leakage</li>
+<li>Risk management</li>
+<li>TCP/IP protocols</li>
+<li>Information security controls</li>
+<li>Basic networking troubleshooting</li>
+<li>Data backup</li>
+</ul>
+<h2 id="classification-of-attacks">Classification of Attacks<a hidden class="anchor" aria-hidden="true" href="#classification-of-attacks">#</a></h2>
+<h3 id="passive-attacks">Passive Attacks<a hidden class="anchor" aria-hidden="true" href="#passive-attacks">#</a></h3>
+<p>PA do not tamper with the data and involve intercepting and monitoring network traffic and data flow on the target network.</p>
+<p>Examples of PA:</p>
+<ul>
+<li>Footprinting</li>
+<li>Sniffing and eavesdropping</li>
+<li>Network traffic analysis</li>
+<li>Decryption of weakly encrypted traffic</li>
+</ul>
+<h3 id="active-attacks">Active Attacks<a hidden class="anchor" aria-hidden="true" href="#active-attacks">#</a></h3>
+<p>AA tamper with the data in transit or disrupt the communication/services between the systems to bypass or break into secured systems.</p>
+<p>Examples of AA:</p>
+<ul>
+<li>DoS attack</li>
+<li>Bypassing protection mechanisms</li>
+<li>Malware attacks (such as viruses, worms, ransomeware)</li>
+<li>Modification of information</li>
+<li>Spoofing attacks</li>
+<li>Replay attacks</li>
+<li>Password-based attacks</li>
+<li>Session hijacking</li>
+<li>MitM attack</li>
+<li>DNS and ARP poisoning</li>
+<li>Compromised-key attack</li>
+<li>Firewall and IDS attack</li>
+<li>Profiling</li>
+<li>Arbitrary code execution</li>
+<li>Privilege escalation</li>
+<li>Backdoor access</li>
+<li>Cryptography attacks</li>
+<li>SQL injection</li>
+<li>XSS attacks</li>
+<li>Directory traversal attacks</li>
+<li>Exploitation of application and OS software</li>
+</ul>
+<h3 id="close-in-attacks">Close-in Attacks<a hidden class="anchor" aria-hidden="true" href="#close-in-attacks">#</a></h3>
+<p>CA are performed when the attacker is close physical proximity with the target system or network in order to gather, modify, or disrupt access to information.</p>
+<p>Example of CA:</p>
+<ul>
+<li>Social engineering (eavesdropping, shoulder surfing, dumpster diving, and other methods)</li>
+</ul>
+<h3 id="insider-attacks">Insider Attacks<a hidden class="anchor" aria-hidden="true" href="#insider-attacks">#</a></h3>
+<p>IA involve using privileged access to violate rules or intentionally cause a threat to the organization&rsquo;s information systems.</p>
+<p>Examples of IA:</p>
+<ul>
+<li>Eavesdropping and wiretapping</li>
+<li>Social engineering</li>
+<li>Data theft and spoliation</li>
+<li>Pod slurping</li>
+<li>Theft of physical devices</li>
+<li>Planting keyloggers, backdoors, or malware</li>
+</ul>
+<h3 id="distribution-attacks">Distribution Attacks<a hidden class="anchor" aria-hidden="true" href="#distribution-attacks">#</a></h3>
+<p>DA occur when attackers tampir with hardware or software prior to installation.</p>
+<p>Examples of DA:</p>
+<ul>
+<li>Modification of software or hardware during production</li>
+<li>Modification of software or hardware during distribution</li>
+</ul>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/picoctf/">PicoCTF</a></li>
+      <li><a href="http://localhost:1313/tags/ceh-v12/">CEH V12</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/hacking/pw-crack-5/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>PW Crack 5</span>
-  </a>
-  <a class="next" href="http://localhost:1313/posts/hacking/scavenger-hunt/">
+  <a class="next" href="http://localhost:1313/posts/hacking/pw-crack-5/">
     <span class="title">Next »</span>
     <br>
-    <span>Scavanger Hunt</span>
+    <span>PW Crack 5</span>
   </a>
 </nav>
 
 
 <ul class="share-buttons">
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share PW Crack 3 on x"
-            href="https://x.com/intent/tweet/?text=PW%20Crack%203&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fpw-crack-3%2f&amp;hashtags=picoCTF">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share cehv12m1-v0.0.1 on x"
+            href="https://x.com/intent/tweet/?text=cehv12m1-v0.0.1&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fcehv12m1-v1%2f&amp;hashtags=CEHv12">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -354,8 +364,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share PW Crack 3 on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fpw-crack-3%2f&amp;title=PW%20Crack%203&amp;summary=PW%20Crack%203&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fpw-crack-3%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share cehv12m1-v0.0.1 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fcehv12m1-v1%2f&amp;title=cehv12m1-v0.0.1&amp;summary=cehv12m1-v0.0.1&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fcehv12m1-v1%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
@@ -363,8 +373,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share PW Crack 3 on reddit"
-            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fpw-crack-3%2f&title=PW%20Crack%203">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share cehv12m1-v0.0.1 on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fcehv12m1-v1%2f&title=cehv12m1-v0.0.1">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
@@ -372,8 +382,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share PW Crack 3 on facebook"
-            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fpw-crack-3%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share cehv12m1-v0.0.1 on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fcehv12m1-v1%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
@@ -381,8 +391,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share PW Crack 3 on whatsapp"
-            href="https://api.whatsapp.com/send?text=PW%20Crack%203%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fpw-crack-3%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share cehv12m1-v0.0.1 on whatsapp"
+            href="https://api.whatsapp.com/send?text=cehv12m1-v0.0.1%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fcehv12m1-v1%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
@@ -390,8 +400,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share PW Crack 3 on telegram"
-            href="https://telegram.me/share/url?text=PW%20Crack%203&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fpw-crack-3%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share cehv12m1-v0.0.1 on telegram"
+            href="https://telegram.me/share/url?text=cehv12m1-v0.0.1&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fcehv12m1-v1%2f">
             <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
@@ -399,8 +409,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share PW Crack 3 on ycombinator"
-            href="https://news.ycombinator.com/submitlink?t=PW%20Crack%203&u=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fpw-crack-3%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share cehv12m1-v0.0.1 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=cehv12m1-v0.0.1&u=http%3a%2f%2flocalhost%3a1313%2fposts%2fhacking%2fcehv12m1-v1%2f">
             <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
                 <path
