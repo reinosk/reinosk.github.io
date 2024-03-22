@@ -1,6 +1,6 @@
 ---
 author: "@reinosk"
-title: PW Crack 3 Write-up
+title: PW Crack 3
 date: 2024-03-10T13:31:25.611Z
 description: Can you crack the password to get the flag?
 summary: Can you crack the password to get the flag?

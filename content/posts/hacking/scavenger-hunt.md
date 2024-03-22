@@ -1,6 +1,6 @@
 ---
 author: "@reinosk"
-title: Scavanger Hunt Write-up
+title: Scavanger Hunt
 date: 2024-03-10T10:17:59.171Z
 description: There is some interesting information hidden around the site. Can you find it?
 summary: There is some interesting information hidden around the site. Can you find it?
