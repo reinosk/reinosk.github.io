@@ -5,8 +5,6 @@ date: 2024-03-10T10:17:59.171Z
 description: There is some interesting information hidden around the site. Can you find it?
 summary: There is some interesting information hidden around the site. Can you find it?
 series: ["Hacking"]
-cover:
-  image: https://i.imgur.com/xP6QMKx.png
 tags: ["picoCTF"]
 ShowToc: true
 TocOpen: true
