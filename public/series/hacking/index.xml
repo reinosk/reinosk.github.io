@@ -11,21 +11,42 @@
     </image>
     <generator>reinosk - reinosk.github.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Mar 2024 22:06:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Mar 2024 22:49:17 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/series/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cehv12m1-v0.0.4</title>
+      <link>http://localhost:1313/posts/hacking/cehv12m1-v004/</link>
+      <pubDate>Fri, 22 Mar 2024 22:49:17 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hacking/cehv12m1-v004/</guid>
+      <description>Cyber Kill Chain Methodology</description>
+    </item>
+    <item>
+      <title>hacking setup vm&#39;s lab</title>
+      <link>http://localhost:1313/posts/hacking/hacking-setup-lab-vm/</link>
+      <pubDate>Fri, 22 Mar 2024 22:49:17 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hacking/hacking-setup-lab-vm/</guid>
+      <description>VM setup for CTF practice</description>
+    </item>
+    <item>
+      <title>cehv12m1-v0.0.3</title>
+      <link>http://localhost:1313/posts/hacking/cehv12m1-v003/</link>
+      <pubDate>Fri, 22 Mar 2024 22:37:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hacking/cehv12m1-v003/</guid>
+      <description>CEH Hacking Methodology (CHM)</description>
+    </item>
     <item>
       <title>cehv12m1-v0.0.2</title>
       <link>http://localhost:1313/posts/hacking/cehv12m1-v002/</link>
       <pubDate>Fri, 22 Mar 2024 22:06:54 +0000</pubDate>
       <guid>http://localhost:1313/posts/hacking/cehv12m1-v002/</guid>
-      <description>Attackers break into systems for various reasons and purposes. Therefore, it&amp;#39;s important to understand how malicious hackers attack and exploit systems and probable reasons behind these attacks.</description>
+      <description>Information Warfare</description>
     </item>
     <item>
       <title>cehv12m1-v0.0.1</title>
       <link>http://localhost:1313/posts/hacking/cehv12m1-v001/</link>
       <pubDate>Fri, 22 Mar 2024 19:41:07 +0000</pubDate>
       <guid>http://localhost:1313/posts/hacking/cehv12m1-v001/</guid>
-      <description>Attackers break into systems for various reasons and purposes. Therefore, it&amp;#39;s important to understand how malicious hackers attack and exploit systems and probable reasons behind these attacks.</description>
+      <description>Classification of Attacks</description>
     </item>
     <item>
       <title>PW Crack 5</title>
