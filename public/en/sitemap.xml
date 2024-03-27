@@ -2,26 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/ceh-v12/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
+    <loc>http://localhost:1313/tags/dvwa/</loc>
+    <lastmod>2024-03-27T13:13:13+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/hacking/cehv12m1-v004/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
+    <loc>http://localhost:1313/posts/hacking/dvwa-setup/</loc>
+    <lastmod>2024-03-27T13:13:13+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/hacking/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/hacking/hacking-setup-lab-vm/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
+    <lastmod>2024-03-27T13:13:13+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
+    <lastmod>2024-03-27T13:13:13+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
+    <lastmod>2024-03-27T13:13:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
@@ -34,7 +28,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
+    <lastmod>2024-03-27T13:13:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
@@ -47,7 +41,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
+    <lastmod>2024-03-27T13:13:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
@@ -58,6 +52,18 @@
                 hreflang="en"
                 href="http://localhost:1313/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2024-03-26T12:58:03+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/hacking/setup-vm-for-hacking-lab/</loc>
+    <lastmod>2024-03-26T12:58:03+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ceh-v12/</loc>
+    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/hacking/cehv12m1-v004/</loc>
+    <lastmod>2024-03-22T22:49:17+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/hacking/cehv12m1-v003/</loc>
     <lastmod>2024-03-22T22:37:54+00:00</lastmod>

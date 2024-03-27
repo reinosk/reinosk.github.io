@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DVWA on 怜之助</title>
+    <link>http://localhost:1313/tags/dvwa/</link>
+    <description>Recent content in DVWA on 怜之助</description>
+    <image>
+      <title>怜之助</title>
+      <url>http://localhost:1313/images/null.png</url>
+      <link>http://localhost:1313/images/null.png</link>
+    </image>
+    <generator>reinosk - reinosk.github.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Mar 2024 13:13:13 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dvwa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DVWA Setup</title>
+      <link>http://localhost:1313/posts/hacking/dvwa-setup/</link>
+      <pubDate>Wed, 27 Mar 2024 13:13:13 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hacking/dvwa-setup/</guid>
+      <description>Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students &amp;amp; teachers to learn about web application security in a controlled class room environment.</description>
+    </item>
+  </channel>
+</rss>
